@@ -14,10 +14,11 @@ pipeline{
     }
     stage('Deploy'){
       steps{
-        echo "Deployed"
+        echo "Deployed" ;
       }
-    }
+   
   }
+
   post{
     failure{
       echo "Pipeline Failed!"
